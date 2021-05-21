@@ -14,6 +14,22 @@
 		043B51FB26565FA200F11C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043B51FA26565FA200F11C1A /* Assets.xcassets */; };
 		043B51FE26565FA200F11C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043B51FC26565FA200F11C1A /* LaunchScreen.storyboard */; };
 		043B520126565FA200F11C1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B520026565FA200F11C1A /* main.m */; };
+		043B5209265660C400F11C1A /* VINDetectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 043B5208265660C400F11C1A /* VINDetectionViewController.mm */; };
+		043B520F2656623800F11C1A /* ch_det_mv3_db_opt.nb in Resources */ = {isa = PBXBuildFile; fileRef = 043B520C2656623800F11C1A /* ch_det_mv3_db_opt.nb */; };
+		043B52102656623800F11C1A /* ch_rec_mv3_crnn_opt.nb in Resources */ = {isa = PBXBuildFile; fileRef = 043B520D2656623800F11C1A /* ch_rec_mv3_crnn_opt.nb */; };
+		043B5221265662DB00F11C1A /* OcrData.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B5220265662DB00F11C1A /* OcrData.m */; };
+		043B5223265662E400F11C1A /* label_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 043B5222265662E300F11C1A /* label_list.txt */; };
+		043B522E265663A200F11C1A /* ocr_clipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043B5228265663A200F11C1A /* ocr_clipper.cpp */; };
+		043B522F265663A200F11C1A /* ocr_db_post_process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043B522A265663A200F11C1A /* ocr_db_post_process.cpp */; };
+		043B5230265663A200F11C1A /* ocr_crnn_process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043B522B265663A200F11C1A /* ocr_crnn_process.cpp */; };
+		043B52342656672100F11C1A /* libpaddle_api_light_bundled.a in Resources */ = {isa = PBXBuildFile; fileRef = 043B52132656623E00F11C1A /* libpaddle_api_light_bundled.a */; };
+		04520AE32657444900D435F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04520AE22657444900D435F1 /* AVFoundation.framework */; };
+		04520AE52657444F00D435F1 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04520AE42657444F00D435F1 /* CoreImage.framework */; };
+		04520AE92657446F00D435F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04520AE82657446F00D435F1 /* CoreGraphics.framework */; };
+		04520AED2657459400D435F1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04520AEC2657459400D435F1 /* CoreMedia.framework */; };
+		04520AEF26574EEA00D435F1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04520AEE26574EEA00D435F1 /* opencv2.framework */; };
+		04520AF12657527900D435F1 /* scanSuccess.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04520AF02657527900D435F1 /* scanSuccess.wav */; };
+		04520AF32657530D00D435F1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04520AF22657530D00D435F1 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +45,36 @@
 		043B51FD26565FA200F11C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043B51FF26565FA200F11C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043B520026565FA200F11C1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		043B5207265660C400F11C1A /* VINDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VINDetectionViewController.h; sourceTree = "<group>"; };
+		043B5208265660C400F11C1A /* VINDetectionViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VINDetectionViewController.mm; sourceTree = "<group>"; };
+		043B520C2656623800F11C1A /* ch_det_mv3_db_opt.nb */ = {isa = PBXFileReference; lastKnownFileType = file; path = ch_det_mv3_db_opt.nb; sourceTree = "<group>"; };
+		043B520D2656623800F11C1A /* ch_rec_mv3_crnn_opt.nb */ = {isa = PBXFileReference; lastKnownFileType = file; path = ch_rec_mv3_crnn_opt.nb; sourceTree = "<group>"; };
+		043B52132656623E00F11C1A /* libpaddle_api_light_bundled.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpaddle_api_light_bundled.a; sourceTree = "<group>"; };
+		043B52162656624300F11C1A /* paddle_lite_factory_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_lite_factory_helper.h; sourceTree = "<group>"; };
+		043B52172656624300F11C1A /* paddle_use_ops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_ops.h; sourceTree = "<group>"; };
+		043B52182656624300F11C1A /* paddle_use_kernels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_kernels.h; sourceTree = "<group>"; };
+		043B52192656624300F11C1A /* paddle_use_passes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_passes.h; sourceTree = "<group>"; };
+		043B521A2656624300F11C1A /* paddle_image_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_image_preprocess.h; sourceTree = "<group>"; };
+		043B521B2656624300F11C1A /* paddle_place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_place.h; sourceTree = "<group>"; };
+		043B521C2656624300F11C1A /* paddle_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_api.h; sourceTree = "<group>"; };
+		043B521F265662DB00F11C1A /* OcrData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcrData.h; sourceTree = "<group>"; };
+		043B5220265662DB00F11C1A /* OcrData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OcrData.m; sourceTree = "<group>"; };
+		043B5222265662E300F11C1A /* label_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = label_list.txt; sourceTree = "<group>"; };
+		043B5228265663A200F11C1A /* ocr_clipper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_clipper.cpp; sourceTree = "<group>"; };
+		043B5229265663A200F11C1A /* ocr_db_post_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocr_db_post_process.h; sourceTree = "<group>"; };
+		043B522A265663A200F11C1A /* ocr_db_post_process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_db_post_process.cpp; sourceTree = "<group>"; };
+		043B522B265663A200F11C1A /* ocr_crnn_process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ocr_crnn_process.cpp; sourceTree = "<group>"; };
+		043B522C265663A200F11C1A /* ocr_clipper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ocr_clipper.hpp; sourceTree = "<group>"; };
+		043B522D265663A200F11C1A /* ocr_crnn_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocr_crnn_process.h; sourceTree = "<group>"; };
+		04520AE22657444900D435F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04520AE42657444F00D435F1 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		04520AE62657445900D435F1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		04520AE82657446F00D435F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04520AEA2657457F00D435F1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		04520AEC2657459400D435F1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		04520AEE26574EEA00D435F1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		04520AF02657527900D435F1 /* scanSuccess.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scanSuccess.wav; sourceTree = "<group>"; };
+		04520AF22657530D00D435F1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04520AE32657444900D435F1 /* AVFoundation.framework in Frameworks */,
+				04520AE92657446F00D435F1 /* CoreGraphics.framework in Frameworks */,
+				04520AE52657444F00D435F1 /* CoreImage.framework in Frameworks */,
+				04520AEF26574EEA00D435F1 /* opencv2.framework in Frameworks */,
+				04520AED2657459400D435F1 /* CoreMedia.framework in Frameworks */,
+				04520AF32657530D00D435F1 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +99,7 @@
 			children = (
 				043B51ED26565F9F00F11C1A /* TextDetection-VIN3 */,
 				043B51EC26565F9F00F11C1A /* Products */,
+				04520AE12657444900D435F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,12 +114,15 @@
 		043B51ED26565F9F00F11C1A /* TextDetection-VIN3 */ = {
 			isa = PBXGroup;
 			children = (
+				043B520A2656620500F11C1A /* PaddleOCR */,
 				043B51EE26565F9F00F11C1A /* AppDelegate.h */,
 				043B51EF26565F9F00F11C1A /* AppDelegate.m */,
 				043B51F126565F9F00F11C1A /* SceneDelegate.h */,
 				043B51F226565F9F00F11C1A /* SceneDelegate.m */,
 				043B51F426565F9F00F11C1A /* ViewController.h */,
 				043B51F526565F9F00F11C1A /* ViewController.m */,
+				043B5207265660C400F11C1A /* VINDetectionViewController.h */,
+				043B5208265660C400F11C1A /* VINDetectionViewController.mm */,
 				043B51F726565F9F00F11C1A /* Main.storyboard */,
 				043B51FA26565FA200F11C1A /* Assets.xcassets */,
 				043B51FC26565FA200F11C1A /* LaunchScreen.storyboard */,
@@ -74,6 +130,80 @@
 				043B520026565FA200F11C1A /* main.m */,
 			);
 			path = "TextDetection-VIN3";
+			sourceTree = "<group>";
+		};
+		043B520A2656620500F11C1A /* PaddleOCR */ = {
+			isa = PBXGroup;
+			children = (
+				04520AF02657527900D435F1 /* scanSuccess.wav */,
+				04520AEE26574EEA00D435F1 /* opencv2.framework */,
+				043B5222265662E300F11C1A /* label_list.txt */,
+				043B521F265662DB00F11C1A /* OcrData.h */,
+				043B5220265662DB00F11C1A /* OcrData.m */,
+				043B5227265663A200F11C1A /* pdocr */,
+				043B52152656624300F11C1A /* include */,
+				043B52122656623E00F11C1A /* lib */,
+				043B520B2656623800F11C1A /* models */,
+			);
+			path = PaddleOCR;
+			sourceTree = "<group>";
+		};
+		043B520B2656623800F11C1A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				043B520C2656623800F11C1A /* ch_det_mv3_db_opt.nb */,
+				043B520D2656623800F11C1A /* ch_rec_mv3_crnn_opt.nb */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		043B52122656623E00F11C1A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				043B52132656623E00F11C1A /* libpaddle_api_light_bundled.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		043B52152656624300F11C1A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				043B52162656624300F11C1A /* paddle_lite_factory_helper.h */,
+				043B52172656624300F11C1A /* paddle_use_ops.h */,
+				043B52182656624300F11C1A /* paddle_use_kernels.h */,
+				043B52192656624300F11C1A /* paddle_use_passes.h */,
+				043B521A2656624300F11C1A /* paddle_image_preprocess.h */,
+				043B521B2656624300F11C1A /* paddle_place.h */,
+				043B521C2656624300F11C1A /* paddle_api.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		043B5227265663A200F11C1A /* pdocr */ = {
+			isa = PBXGroup;
+			children = (
+				043B5228265663A200F11C1A /* ocr_clipper.cpp */,
+				043B522C265663A200F11C1A /* ocr_clipper.hpp */,
+				043B522B265663A200F11C1A /* ocr_crnn_process.cpp */,
+				043B522D265663A200F11C1A /* ocr_crnn_process.h */,
+				043B522A265663A200F11C1A /* ocr_db_post_process.cpp */,
+				043B5229265663A200F11C1A /* ocr_db_post_process.h */,
+			);
+			path = pdocr;
+			sourceTree = "<group>";
+		};
+		04520AE12657444900D435F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04520AF22657530D00D435F1 /* AudioToolbox.framework */,
+				04520AEC2657459400D435F1 /* CoreMedia.framework */,
+				04520AEA2657457F00D435F1 /* AssetsLibrary.framework */,
+				04520AE82657446F00D435F1 /* CoreGraphics.framework */,
+				04520AE62657445900D435F1 /* libc++.tbd */,
+				04520AE42657444F00D435F1 /* CoreImage.framework */,
+				04520AE22657444900D435F1 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +262,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043B52342656672100F11C1A /* libpaddle_api_light_bundled.a in Resources */,
+				04520AF12657527900D435F1 /* scanSuccess.wav in Resources */,
 				043B51FE26565FA200F11C1A /* LaunchScreen.storyboard in Resources */,
+				043B520F2656623800F11C1A /* ch_det_mv3_db_opt.nb in Resources */,
 				043B51FB26565FA200F11C1A /* Assets.xcassets in Resources */,
+				043B52102656623800F11C1A /* ch_rec_mv3_crnn_opt.nb in Resources */,
 				043B51F926565F9F00F11C1A /* Main.storyboard in Resources */,
+				043B5223265662E400F11C1A /* label_list.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +282,13 @@
 			files = (
 				043B51F626565F9F00F11C1A /* ViewController.m in Sources */,
 				043B51F026565F9F00F11C1A /* AppDelegate.m in Sources */,
+				043B522E265663A200F11C1A /* ocr_clipper.cpp in Sources */,
+				043B5230265663A200F11C1A /* ocr_crnn_process.cpp in Sources */,
+				043B5221265662DB00F11C1A /* OcrData.m in Sources */,
+				043B5209265660C400F11C1A /* VINDetectionViewController.mm in Sources */,
 				043B520126565FA200F11C1A /* main.m in Sources */,
 				043B51F326565F9F00F11C1A /* SceneDelegate.m in Sources */,
+				043B522F265663A200F11C1A /* ocr_db_post_process.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,16 +431,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CX9724CS5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TextDetection-VIN3/PaddleOCR",
+				);
 				INFOPLIST_FILE = "TextDetection-VIN3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TextDetection-VIN3/PaddleOCR/lib",
+				);
+				OTHER_LDFLAGS = "$(PROJECT_DIR)/TextDetection-VIN3/PaddleOCR/lib/libpaddle_api_light_bundled.a";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edu-edu.TextDetection-VIN3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = developer;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TextDetection-VIN3/PaddleOCR/pdocr\"";
 			};
 			name = Debug;
 		};
@@ -309,16 +463,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CX9724CS5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TextDetection-VIN3/PaddleOCR",
+				);
 				INFOPLIST_FILE = "TextDetection-VIN3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TextDetection-VIN3/PaddleOCR/lib",
+				);
+				OTHER_LDFLAGS = "$(PROJECT_DIR)/TextDetection-VIN3/PaddleOCR/lib/libpaddle_api_light_bundled.a";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.edu-edu.TextDetection-VIN3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = developer;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TextDetection-VIN3/PaddleOCR/pdocr\"";
 			};
 			name = Release;
 		};

@@ -16,4 +16,4 @@ libpaddle_api_light_bundled.a 放在PaddleOCR/lib目录下，大小12.5M，下�
 
 效果图：
 
-![](https://github.com/TheLittleBoy/TextDetection-VIN3/blob/master/image.jpg)
+![](https://github.com/TheLittleBoy/TextDetection-VIN3/blob/main/image.jpg)

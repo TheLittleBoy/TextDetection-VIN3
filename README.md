@@ -1,3 +1,7 @@
+推荐另外一个Vision框架项目：https://github.com/TheLittleBoy/TextDetection-VIN4
+
+------
+
 # TextDetection-VIN3
 iOS使用飞桨OCR文字识别，实现离线扫描VIN码，免费，并且效果极佳，速度贼快，**非EasyEdge版本**!
 
